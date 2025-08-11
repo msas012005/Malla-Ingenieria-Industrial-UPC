@@ -2,24 +2,21 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Malla Curricular Interactiva</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>Malla Curricular Interactiva 💖</h1>
+    <h1>Malla Curricular Interactiva</h1>
+    <label for="cicloSelect">Ciclo actual:</label>
+    <select id="cicloSelect"></select>
 
-    <div class="controls">
-        <label for="nivelActual">Ciclo actual:</label>
-        <select id="nivelActual"></select>
+    <div id="malla" class="malla-container"></div>
+
+    <div id="creditos-info" class="creditos-info">
+        Créditos seleccionados este ciclo: <span id="creditosActuales">0</span> / <span id="creditosMaximos">27</span>
     </div>
 
-    <div id="malla" class="malla"></div>
-
-    <div class="footer">
-        <p>Créditos seleccionados este ciclo: <span id="creditosCiclo">0</span> / 27</p>
-        <p>Créditos acumulados: <span id="creditosTotales">0</span></p>
-    </div>
-
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
