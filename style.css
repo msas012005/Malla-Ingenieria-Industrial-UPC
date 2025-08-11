@@ -1,71 +1,42 @@
-:root {
-    --rosa-claro: #fbeae7;
-    --rosa-pastel: #f8d7da;
-    --nude: #fdf6f0;
-    --rosa-fuerte: #e5989b;
-    --gris-bloqueado: #d6d6d6;
-}
-
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: var(--nude);
+    font-family: Arial, sans-serif;
+    background: #fdecec;
     margin: 0;
     padding: 20px;
-    color: #4a3f35;
 }
 
 h1 {
     text-align: center;
-    color: var(--rosa-fuerte);
 }
 
-.controls {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.malla {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
+.malla-container {
+    display: flex;
     gap: 10px;
+    overflow-x: auto;
+    margin-top: 20px;
 }
 
 .columna {
-    background-color: var(--rosa-claro);
-    border-radius: 10px;
+    background: #ffeaea;
     padding: 10px;
+    border-radius: 8px;
+    min-width: 180px;
 }
 
 .columna h2 {
     text-align: center;
-    color: var(--rosa-fuerte);
+    font-size: 1.2em;
 }
 
-.curso {
-    background-color: var(--rosa-pastel);
-    border-radius: 8px;
-    padding: 5px;
+label {
+    display: block;
     margin: 5px 0;
     font-size: 0.9em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
-.curso.bloqueado {
-    background-color: var(--gris-bloqueado);
-    color: #777;
-}
-
-.curso input[type="checkbox"] {
-    transform: scale(1.2);
-}
-
-.footer {
+.creditos-info {
     margin-top: 20px;
-    padding: 10px;
-    background-color: var(--rosa-claro);
-    border-radius: 10px;
-    text-align: center;
     font-weight: bold;
+    text-align: center;
 }
+
